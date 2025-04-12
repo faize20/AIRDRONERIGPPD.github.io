@@ -1,0 +1,205 @@
+body{
+    background-color: #f7c479;
+    margin: 20px;
+}
+main{
+    margin: 50px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(203, 236, 247);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: rgb(4, 56, 56);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(76, 227, 247);
+}
+.navbar li{
+    float: left;
+}
+
+.card-container {
+    display: inline-block;
+    margin: 20px;
+}
+
+.card {
+    z-index: 0;
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.1s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    z-index: 10;
+}
+
+.card-front {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background: white;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: visible;
+    opacity: 1
+}
+
+.card-back {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.1s ease;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+/* Reveal on hover */
+.card:hover .card-front {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.card:hover .card-back {
+    left: 0;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Individual background colors */
+.back-white {
+    background-color: white;
+}
+
+.back-yellow {
+    background-color: #fffcb0;
+}
+
+.back-red {
+    background-color: #ffe2e2;
+}
+
+/* Shared styling */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.info-box {
+    display: inline-block;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+.mail-icon {
+    width: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.event-card {
+    background: #fff7f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.event-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #d0453c;
+    font-size: 16px;
+}
+
+.event-number {
+    background-color: #ffd9d4;
+    color: #d0453c;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.event-date {
+    font-size: 16px;
+}
+
+.event-card hr {
+    border: none;
+    border-top: 1px solid #f2c7c2;
+    margin: 10px 0;
+}
+
+.event-body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    color: #5a2c24;
+    font-size: 16px;
+}
+
+.event-time {
+    color: #ff4b75;
+    font-weight: bold;
+}
+
+.event-description {
+    font-weight: 500;
+}
+  
+
+  

@@ -273,6 +273,7 @@ h2{
 }
   
 .tab-buttons {
+    display: flex center;
     margin: 20px 0;
     text-align: center;
 }

@@ -65,28 +65,60 @@ h2{
     color: #000;
 }
 
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffee;
+    padding: 10px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-.navbar ul{
+/* Logo section */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .logo span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff5a5f;
+}
+
+/* Navigation links */
+.navbar .nav-links {
     list-style-type: none;
-    background-color: rgb(231, 244, 248);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    border-radius: 20px;
+    display: flex;
+    gap: 20px;
 }
-.navbar a{
-    color: rgb(0, 0, 0);
+
+.navbar .nav-links li {
+    float: none;
+}
+
+.navbar .nav-links a {
     text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 15px;
+    transition: 0.3s;
 }
-.navbar a:hover{
-    background-color: rgb(22, 206, 252);
-    border-radius: 20px;
-}
-.navbar li{
-    float: left;
+
+.navbar .nav-links a:hover {
+    background-color: #16cefc;
+    color: #fff;
 }
 
 .card-container {

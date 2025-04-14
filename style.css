@@ -88,6 +88,7 @@ h2{
 .navbar .logo img {
     height: 40px;
     margin-right: 10px;
+    border-radius: 5px;
 }
 
 .navbar .logo span {
